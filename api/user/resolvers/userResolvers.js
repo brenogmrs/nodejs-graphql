@@ -14,9 +14,6 @@ const userResolvers = {
     users: () => {
       return usersArray;
     },
-    firstUser: () => {
-      return usersArray[0];
-    },
   },
 };
 
