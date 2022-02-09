@@ -1,18 +1,7 @@
-const usersArray = [
-  {
-    name: 'Breno',
-    active: true,
-  },
-  {
-    name: 'Junio',
-    active: false,
-  },
-];
-
 const userResolvers = {
   Query: {
-    users: () => {
-      return usersArray;
+    users: (root, args, { dataSources }) => {
+      return dataSources.usersAPI.getAllUsers();
     },
   },
 };
