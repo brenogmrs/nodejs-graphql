@@ -7,6 +7,11 @@ const userResolvers = {
       return dataSources.usersAPI.getUserById(id);
     },
   },
+  Mutation: {
+    createUser: (root, user, { dataSources }) => {
+      return dataSources.usersAPI.createUser(user);
+    },
+  },
 };
 
 module.exports = userResolvers;
