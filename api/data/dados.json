@@ -62,13 +62,6 @@
       "email": "b@b.com.br",
       "role": 2,
       "id": 9
-    },
-    {
-      "name": "Breno",
-      "active": true,
-      "email": "b@b.com.br",
-      "role": 2,
-      "id": 10
     }
   ],
   "roles": [
